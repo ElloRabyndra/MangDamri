@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MangDamri</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="">Ello Rabyndra</a>
+      <nav>
+        <a href="#jadwal">Jadwal</a>
+        <a href="#lokasi">Lokasi</a>
+        <a href="#informasi">Informasi</a>
+        <a href="#laporan">Laporan</a>
+      </nav>
+    </header>
+    <!-- Main Landing Page -->
+    <main>
+      <div class="logo-mangdamri"></div>
+    </main>
+    <!-- Jadwal -->
+    <section id="jadwal">
+      <div class="main-jadwal">
+        <div class="main-damri">
+          <div class="main-dompet"></div>
+          <span>Damri 1</span>
+        </div>
+        <div class="main-tanggal">9 September 2024</div>
+        <div class="main-hari">Senin</div>
+      </div>
+      <div class="side-jadwal">
+        <div class="side-jadwal-damri">
+          <div class="side-damri"></div>
+          <div class="side-jam">
+            <p>Damri 1</p>
+            <p>05.00 - 17.00</p>
+          </div>
+          <div class="side-harga">Rp.10.000</div>
+        </div>
+        <div class="side-jadwal-damri">
+          <div class="side-damri"></div>
+          <div class="side-jam">
+            <p>Damri 2</p>
+            <p>05.00 - 17.00</p>
+          </div>
+          <div class="side-harga">Rp.10.000</div>
+        </div>
+        <div class="side-jadwal-damri nonactived">
+          <div class="side-damri"></div>
+          <div class="side-status">
+            <p>Damri 3</p>
+            <p>Tidak Tersedia</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="lokasi">
+      <button class="prev button">&lt;</button>
+      <div class="lokasi-wrapper">
+        <div class="lokasi-damri">
+          <div class="lokasi-damri-header">
+            <p>Damri 1</p>
+            <p>Tekan Point Untuk Melihat Jadwal Damri 1</p>
+          </div>
+          <div class="lokasi-damri-map"></div>
+        </div>
+        <div class="button-mobile-wrapper">
+          <button class="prevMobile button">&lt;</button>
+          <button class="nextMobile button">&gt;</button>
+        </div>
+        <div class="detail-lokasi-damri">
+          <div class="detail-lokasi-damri-header">
+            <div class="circle-wrapper">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+            <div class="nama-supir">Ahmad Yunus</div>
+            <div class="detail-nama-supir">Selengkapnya Mengenai Supir</div>
+          </div>
+          <div class="detail-lokasi-damri-content">
+            <div class="detail-lokasi-damri-content-icon"></div>
+            <div class="detail-lokasi-damri-content-main">
+              <p>Jalan Parameswara, Bukit Baru</p>
+              <p>Kota Palembang</p>
+              <p>Estimasi Tiba Dalam 12 Menit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="next button">&gt;</button>
+    </section>
+    <section id="informasi">
+      <div class="informasi-supir">
+        <div class="informasi-supir-title">Supir</div>
+        <p class="informasi-supir-detail">
+          Tekan Untuk Melihat Informasi Supir
+        </p>
+      </div>
+      <div class="informasi-damri">
+        <div class="informasi-damri-title">Damri 1</div>
+        <button class="down button">&gt;</button>
+      </div>
+    </section>
+    <section id="laporan">
+      <form action="">
+        <div class="form-wrapper">
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" autocomplete="off" />
+        </div>
+        <div class="form-wrapper">
+          <label for="email">Email:</label>
+          <input type="text" id="email" autocomplete="off" />
+        </div>
+        <div class="form-wrapper">
+          <label for="fakultas">Fakultas:</label>
+          <input type="text" id="fakultas" autocomplete="off" />
+        </div>
+        <div class="form-wrapper">
+          <label for="prodi">Program Studi:</label>
+          <input type="text" id="prodi" autocomplete="off" />
+        </div>
+        <div class="form-wrapper">
+          <label for="formLaporan">Laporan:</label>
+          <textarea name="" id="formLaporan"></textarea>
+        </div>
+        <div class="form-wrapper">
+          <button>Kirim</button>
+        </div>
+      </form>
+    </section>
+    <footer>MangDamri</footer>
+    <script src="script.js"></script>
+  </body>
+</html>

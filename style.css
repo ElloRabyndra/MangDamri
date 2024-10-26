@@ -1,0 +1,589 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Color Pallete
+Merah: f00607
+Kuning: ffcd02
+Abu: d1d1d1 */
+
+/* CSS Style */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+/* Header dan Main */
+header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em 1.5em;
+  color: rgb(62, 62, 62);
+  display: flex;
+  justify-content: space-between;
+  background-image: url(asset/bgkuning_mangdamri.jpg);
+  background-size: cover;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+header nav {
+  display: flex;
+  gap: 2em;
+}
+
+header a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.5em 1.2em;
+  border-radius: 0.8em;
+  background-image: url(asset/bg_mangdamrri_kecil.jpg);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+header a:hover {
+  transform: translateY(-3px);
+}
+
+main {
+  min-height: 100vh;
+  background-image: url(asset/bg_mangdamri.jpg);
+  background-image: url(asset/bg_mangdamrri_kecil.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+main .logo-mangdamri {
+  width: 600px;
+  height: 400px;
+  background-image: url(asset/logo_mangdamri.png);
+  background-size: cover;
+}
+
+section {
+  padding: 8em 0;
+}
+
+/* Jadwal */
+#jadwal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  gap: 3em;
+  flex-wrap: wrap;
+  /* gap: 12em; */
+}
+
+.main-jadwal {
+  background-color: #ffcd02;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2em;
+  color: white;
+  font-size: 2.2em;
+  font-weight: bold;
+  padding: 1.2em;
+  min-width: 480px;
+  height: 280px;
+  border-radius: 2em;
+  transition: 0.3s;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.main-jadwal:hover {
+  background-color: #f3c200;
+}
+
+.main-damri {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.main-dompet {
+  width: 60px;
+  height: 60px;
+  margin: -10px 0 0 -10px;
+  background-image: url(asset/icon_dompet.png);
+  background-size: cover;
+}
+
+.main-hari {
+  background-color: white;
+  font-weight: 600;
+  color: #ffcd02;
+  width: min-content;
+  padding: 0.1em 0.6em;
+  border-radius: 0.8em;
+  transition: 0.3s;
+}
+
+.main-hari:hover {
+  background-color: rgb(234, 234, 234);
+  transform: translateY(-2px);
+}
+
+.side-jadwal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1.2em;
+}
+
+.side-jadwal-damri {
+  overflow: hidden;
+  background-color: #ffcd02;
+  width: 450px;
+  height: 170px;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 2em;
+  display: grid;
+  grid-template-columns: 0.8fr 1.5fr 1fr;
+  align-content: center;
+  gap: 0.5em;
+  padding: 0 0.8em;
+  transition: 0.3s;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.side-jadwal-damri:hover {
+  background-color: #f3c200;
+}
+
+.side-damri {
+  width: 90px;
+  height: 90px;
+  background-image: url(asset/damri.png);
+  background-size: cover;
+}
+
+.nonactived {
+  background-color: #f00607;
+  overflow: hidden;
+  width: 450px;
+  height: 170px;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 2em;
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  padding: 0 0.8em;
+  transition: 0.3s;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.nonactived:hover {
+  background-color: #d31616;
+}
+
+/* Lokasi */
+#lokasi {
+  padding: 8em 1.5em 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5.5em;
+  background-image: url(asset/bg_mangdamrri_kecil.jpg);
+  background-size: cover;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.button {
+  background-color: #ffcd02;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  outline: 0;
+  border: 0;
+  transform: 0.3s;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.button:active {
+  color: rgb(222, 222, 222);
+}
+
+.button-mobile-wrapper {
+  display: none;
+  gap: 1em;
+}
+.lokasi-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+  flex-wrap: wrap;
+}
+
+.lokasi-damri,
+.detail-lokasi-damri {
+  width: 450px;
+  height: 400px;
+  border-radius: 3em;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.205);
+}
+
+.lokasi-damri-header {
+  background-color: #d1d1d1;
+  text-align: center;
+  font-size: 1.2em;
+  color: white;
+  font-weight: bold;
+  padding: 0.5em;
+  position: relative;
+  z-index: 1;
+}
+
+.lokasi-damri-header p {
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.lokasi-damri-map {
+  height: 100%;
+  background-image: url(asset/lokasi.png);
+  background-size: contain;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.lokasi-damri-map:hover {
+  transform: scale(1.5);
+}
+
+.detail-lokasi-damri {
+  background-image: url(asset/bgkuning_mangdamri.jpg);
+  color: rgb(57, 57, 57);
+}
+
+.detail-lokasi-damri-header {
+  padding: 0.8em 3em;
+  border-bottom: 4px solid white;
+}
+
+.circle-wrapper {
+  display: flex;
+  gap: 5px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 1px 0.5px rgba(0, 0, 0, 0.3);
+}
+
+.detail-lokasi-damri-content {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 2.5em 2em;
+}
+
+.detail-lokasi-damri-content-icon {
+  width: 60px;
+  height: 60px;
+  background-image: url(asset/icon_lokasi.png);
+  background-size: cover;
+}
+
+.nama-supir,
+.detail-nama-supir,
+.detail-lokasi-damri-content-main p {
+  background-color: white;
+  width: max-content;
+  border-radius: 1em;
+  margin: 10px 0;
+  padding: 0.4em 1em;
+  transition: 0.3s;
+}
+
+.circle:hover,
+.nama-supir:hover,
+.detail-nama-supir:hover,
+.detail-lokasi-damri-content-main p:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+/* Informasi */
+#informasi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5.5em;
+  flex-wrap: wrap;
+}
+
+.informasi-supir,
+.informasi-damri {
+  width: 450px;
+  height: 450px;
+  border-radius: 3em;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #ffcd02;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.205);
+}
+
+.informasi-supir-title,
+.informasi-damri-title {
+  background-color: white;
+  font-size: 3em;
+  font-weight: bold;
+  color: #ffcd02;
+  width: max-content;
+  border-radius: 1em;
+  margin: 10px 0;
+  padding: 0.2em 1.3em;
+  transition: 0.3s;
+}
+
+.informasi-supir-title:hover,
+.informasi-damri-title:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.informasi-supir-detail {
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.informasi-damri .button {
+  background-color: white;
+  height: 80px;
+  width: 60px;
+  border-radius: 2em;
+  color: #ffcd02;
+  box-shadow: none;
+  transform: rotate(90deg);
+}
+
+.informasi-damri .button:active {
+  color: #f3c200;
+}
+
+/* Laporan */
+#laporan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5em;
+  background-image: url(asset/bg_mangdamrri_kecil.jpg);
+  background-size: cover;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  color: rgb(57, 57, 57);
+  width: 550px;
+  height: 550px;
+  padding: 1em 3.5em;
+  border-radius: 3em;
+  overflow: hidden;
+  font-size: 1.2em;
+  font-weight: 600;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.205);
+  background-image: url(asset/bgkuning_mangdamri.jpg);
+  background-size: cover;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  margin: 5px auto;
+}
+
+.form-wrapper input,
+.form-wrapper textarea {
+  border: 0;
+  outline: 0;
+  border-radius: 1em;
+  padding: 0.2em 0.8em;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.form-wrapper input {
+  height: 35px;
+}
+
+.form-wrapper textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form-wrapper button {
+  color: inherit;
+  background-color: white;
+  margin: 1em auto 0;
+  align-self: center;
+  width: 100px;
+  border: 0;
+  outline: 0;
+  padding: 0.3em 0.6em;
+  font-size: 1.1em;
+  font-weight: inherit;
+  border-radius: 1em;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.form-wrapper button:active {
+  background-color: rgb(240, 240, 240);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-image: url(asset/bgkuning_mangdamri.jpg);
+  background-size: cover;
+  color: white;
+  font-size: 1.15em;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+
+  .prev.button {
+    display: none;
+  }
+  .next.button {
+    display: none;
+  }
+
+  .button-mobile-wrapper {
+    display: flex;
+  }
+
+  .lokasi-wrapper {
+    flex-direction: column;
+    gap: 2em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main .logo-mangdamri {
+    width: 400px;
+    height: 250px;
+  }
+
+  #jadwal,
+  #laporan {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .main-jadwal {
+    min-width: 280px;
+    height: 200px;
+    font-size: 1.3em;
+  }
+
+  .side-jadwal-damri {
+    width: 280px;
+    align-items: center;
+    grid-template-columns: 0.8fr 1fr;
+    font-size: 1.2em;
+  }
+
+  .side-damri {
+    width: 75px;
+    height: 75px;
+  }
+
+  .lokasi-damri,
+  .detail-lokasi-damri {
+    width: 320px;
+    height: 350px;
+  }
+
+  .detail-lokasi-damri-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .detail-lokasi-damri-content {
+    padding: 1em 2em;
+  }
+
+  .detail-lokasi-damri-content-icon {
+    display: none;
+  }
+
+  #informasi {
+    gap: 3em;
+  }
+
+  .informasi-supir,
+  .informasi-damri {
+    width: 280px;
+    height: 300px;
+  }
+
+  .informasi-supir-title,
+  .informasi-damri-title {
+    font-size: 2em;
+  }
+
+  .informasi-supir-detail {
+    font-size: 1em;
+  }
+
+  form {
+    font-size: 1em;
+    width: 330px;
+    height: auto;
+    padding: 1em 1.5em;
+  }
+
+  .form-wrapper textarea {
+    height: 150px;
+  }
+}
