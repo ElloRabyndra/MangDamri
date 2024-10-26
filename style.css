@@ -550,6 +550,7 @@ footer {
   }
 
   .detail-lokasi-damri-content {
+    justify-content: center;
     padding: 1em 2em;
   }
 
