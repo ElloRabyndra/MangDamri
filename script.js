@@ -87,6 +87,20 @@ downButton.addEventListener("click", function () {
   informasiDamriHeader.innerHTML = "Damri " + indexDamri;
 });
 
+// Form Laporan
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbynUsO9A6arJPW1aQl3z6Ch9ukvm-mA0AvFcvjdUBPryC0SNSb60VwT67Lmy42LvimQ/exec";
+const form = document.forms["form-MangDamri"];
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => console.log("Success!", response))
+    .catch((error) => console.error("Error!", error.message));
+
+  form.reset();
+});
+
 // Responsive
 const prevMobile = document.querySelector(".prevMobile");
 const nextMobile = document.querySelector(".nextMobile");
