@@ -101,6 +101,9 @@ form.addEventListener("submit", (e) => {
   form.reset();
 });
 
+// Spreadsheet Laporan
+// https://docs.google.com/spreadsheets/d/110ksSZQ-QpcODiy131LAN3YStSE4ublH3jNEJjM-Eko/edit?gid=0#gid=0
+
 // Responsive
 const prevMobile = document.querySelector(".prevMobile");
 const nextMobile = document.querySelector(".nextMobile");
